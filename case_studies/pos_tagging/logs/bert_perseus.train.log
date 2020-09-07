@@ -1,0 +1,37 @@
+2020-09-05 23:12:19.786791: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+
+********************************************
+Running on: cuda
+********************************************
+
+{'mode': 'train', 'bertPath': '../../models/latin_bert', 'tokenizerPath': '../../models/subword_tokenizer_latin/latin.subword.encoder', 'batch_prediction_file': None, 'input_prediction_file': None, 'output_prediction_file': None, 'trainFile': 'UD_Latin-Perseus/la_perseus-ud-train.conllu', 'testFile': None, 'devFile': None, 'tagFile': 'UD_Latin-Perseus/pos.tagset', 'modelFile': 'UD_Latin-Perseus/pos.model', 'metric': 'accuracy', 'max_epochs': '5'}
+0
+10
+20
+30
+40
+loss:  tensor(40.9414, device='cuda:0', grad_fn=<AddBackward0>)
+0
+10
+20
+30
+40
+loss:  tensor(7.3954, device='cuda:0', grad_fn=<AddBackward0>)
+0
+10
+20
+30
+40
+loss:  tensor(4.0772, device='cuda:0', grad_fn=<AddBackward0>)
+0
+10
+20
+30
+40
+loss:  tensor(2.5667, device='cuda:0', grad_fn=<AddBackward0>)
+0
+10
+20
+30
+40
+loss:  tensor(1.6285, device='cuda:0', grad_fn=<AddBackward0>)
