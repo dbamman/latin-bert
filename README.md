@@ -6,7 +6,7 @@
 
 ```sh
 conda create --name latinbert python=3
-source activate latinbert
+conda activate latinbert
 ```
 
 2.) Install PyTorch according to your own system requirements (GPU vs. CPU, CUDA version): [https://pytorch.org](https://pytorch.org).
@@ -52,7 +52,7 @@ Latin BERT is pre-trained using data from the following sources.
 |[Internet Archive](https://archive.org)|561.1M|
 |[Latin Library](https://www.thelatinlibrary.com)|15.8M|
 |[Patrologia Latina](https://github.com/OpenGreekAndLatin/patrologia_latina-dev)|29.3M|
-|[Perseus](http://perseus.tufts.edu)|6.5M|
+|[Perseus](http://www.perseus.tufts.edu)|6.5M|
 |[Latin Wikipedia](https://la.wikipedia.org)|15.8M|
 |Total|642.7M|
 
@@ -63,7 +63,7 @@ Since the texts from the Internet Archive (IA) are the product of noisy OCR, we 
 
 ### Training
 
-We pre-train Latin BERT using [tensorflow](https://github.com/google-research/bert) on a TPU for 1M steps. Training took approximately 5 days on a TPU v2, and cost ~$540 on Google Cloud (at $4.50 per TPU v2 hour).  We set the maximum sequence length to 256 WordPiece tokens. 
+We pre-train Latin BERT using [tensorflow](https://github.com/google-research/bert) on a TPU for 1M steps. Training took approximately 5 days on a TPU v2, and cost ~$540 on Google Cloud (at $4.50 per TPU v2 hour).  We set the maximum sequence length to 256 WordPiece tokens.
 
 We convert the resulting tensorflow checkpoint into a BERT model that can used by the HuggingFace library using the [transformers-cli](https://github.com/huggingface/transformers/blob/master/transformers-cli) library.  The model in `model/latin_bert` can be used with the HuggingFace transformers library.
 
@@ -97,7 +97,7 @@ Latin BERT can be used to generate probabilites for lacunae and other missing wo
 
 The words with the highest probabilities predicted to fill that slot are the following:
 
-|Word|Probability| 
+|Word|Probability|
 |---|---|
 |secundo|0.451|
 |primo|0.385|
@@ -116,7 +116,7 @@ The words with the highest probabilities predicted to fill that slot are the fol
 
 Latin BERT is able to distinguish between senses of Latin words. We construct a new WSD dataset by mining citations from the Lewis and Short *Latin Dictionary*, and measure the ability of different methods to distinguish between them given the context of the sentence. In a balanced evaluation (where random choice yields 50% accuracy), Latin BERT outperforms static embeddings by over 8 absolute points.
 
-|Method|Accuracy| 
+|Method|Accuracy|
 |---|---|
 |Latin BERT|75.4|
 |Static embeddings|67.3|
