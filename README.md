@@ -22,7 +22,7 @@ pip install -r requirements.txt
 4.) Install Latin tokenizer models:
 
 ```sh
-python -c "from cltk.corpus.utils.importer import CorpusImporter; corpus_importer = CorpusImporter('latin');corpus_importer.import_corpus('latin_models_cltk')"
+python3 -c "from cltk.corpus.utils.importer import CorpusImporter; corpus_importer = CorpusImporter('latin');corpus_importer.import_corpus('latin_models_cltk')"
 ```
 
 5.) Download pre-trained BERT model for Latin:
