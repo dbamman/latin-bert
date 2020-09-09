@@ -1,0 +1,9 @@
+2020-09-09 22:26:10.679233: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+
+********************************************
+Running on: cuda
+********************************************
+
+{'mode': 'test', 'modelFile': 'UD_Latin-Perseus/pos.static.model', 'max_epochs': None, 'embeddingsFile': '../../models/latin.200.vectors.txt', 'trainFile': None, 'testFile': 'UD_Latin-Perseus/la_perseus-ud-test.conllu', 'devFile': None, 'tagFile': 'UD_Latin-Perseus/pos.tagset'}
+1000000 200
+Test accuracy: 0.878	10954.0

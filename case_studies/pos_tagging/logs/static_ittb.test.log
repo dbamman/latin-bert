@@ -1,0 +1,9 @@
+2020-09-09 23:10:42.404775: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+
+********************************************
+Running on: cuda
+********************************************
+
+{'mode': 'test', 'modelFile': 'UD_Latin-ITTB/pos.static.model', 'max_epochs': None, 'embeddingsFile': '../../models/latin.200.vectors.txt', 'trainFile': None, 'testFile': 'UD_Latin-ITTB/la_ittb-ud-test.conllu', 'devFile': None, 'tagFile': 'UD_Latin-ITTB/pos.tagset'}
+1000000 200
+Test accuracy: 0.977	29842.0
