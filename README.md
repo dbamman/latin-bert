@@ -128,13 +128,13 @@ BERT representations are contextual embeddings, so the same word type (e.g., *in
 
 |Cosine|text|citation|
 |---|---|---|
-|0.835|ager romanus primum divisus <span style="color:#FF00FF">in</span> partis tris, a quo tribus appellata titiensium ...|varro.ll5.txt |
-|0.834|in ea regna duodeviginti dividuntur <span style="color:#FF00FF">in</span> duas partes.|solinus4.txt |
-|0.833|gallia est omnis divisa <span style="color:#FF00FF">in</span> partes tres, quarum unam incolunt belgae, aliam ...|caesar gall1.txt |
-|0.824|is pagus appellabatur tigurinus; nam omnis civitas helvetia <span style="color:#FF00FF">in</span> quattuor pagos divisa est.|caesar gall1.txt |
-|0.820|ea pars, quam africam appellavimus, dividitur <span style="color:#FF00FF">in</span> duas provincias, veterem et novam, discretas fossa ...|pliny.nh5.txt |
-|0.817|eam distinxit <span style="color:#FF00FF">in</span> partes quatuor.|erasmus ep.txt |
-|0.812|hereditas plerumque dividitur <span style="color:#FF00FF">in</span> duodecim uncias, quae assis appellatione continentur.|justinian institutes2.txt |
+|0.835|ager romanus primum divisus <span style="color:#FF00FF">in</span> partis tris, a quo tribus appellata titiensium ...|Varro, *Ling*. |
+|0.834|in ea regna duodeviginti dividuntur <span style="color:#FF00FF">in</span> duas partes.|Sol. |
+|0.833|gallia est omnis divisa <span style="color:#FF00FF">in</span> partes tres, quarum unam incolunt belgae, aliam ...|Caes., *BGall*.|
+|0.824|is pagus appellabatur tigurinus; nam omnis civitas helvetia <span style="color:#FF00FF">in</span> quattuor pagos divisa est.|Caes., *BGall*. |
+|0.820|ea pars, quam africam appellavimus, dividitur <span style="color:#FF00FF">in</span> duas provincias, veterem et novam, discretas fossa ...|Plin., *HN* |
+|0.817|eam distinxit <span style="color:#FF00FF">in</span> partes quatuor.|Erasmus, *Ep.* |
+|0.812|hereditas plerumque dividitur <span style="color:#FF00FF">in</span> duodecim uncias, quae assis appellatione continentur.|Justinian, *Inst.*|
 
 
 The most similar tokens not only capture the specific morphological constraints of this sense of *in* appearing with a noun in the accusative case (denoting *into* rather than *within*) but also broadly capture the more specific subsense of division *into* parts.
