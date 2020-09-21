@@ -1,5 +1,9 @@
 # latin-bert
 
+Latin BERT is a contextual language model for the Latin language, described in more detail in the following:
+
+David Bamman and Patrick J. Burns (2020), Latin BERT: A Contextual Language Model for Classical Philology, ArXiv.
+
 ### Install
 
 1.) Create a [conda environment](https://www.anaconda.com/download/) (optional):
