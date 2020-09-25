@@ -56,9 +56,10 @@ def read_annotations(filename, tagset, labeled):
 					label=0
 					if labeled:
 						label=split_line[3]
+						label=tagset[label]
 					
 					data.append(word)
-					data.append(tagset[label])
+					data.append(label)
 					
 					data.append(sentenceID)
 					data.append(filename)
