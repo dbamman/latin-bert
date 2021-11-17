@@ -1,8 +1,8 @@
 import sys, re
-from cltk.tokenize.word import WordTokenizer
+from cltk.tokenizers.lat.lat import LatinWordTokenizer as WordTokenizer
 from unidecode import unidecode
 
-word_tokenizer = WordTokenizer('latin')
+word_tokenizer = WordTokenizer()
 
 def read_lemmas(filename):
 	lemmadict={}

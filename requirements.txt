@@ -1,6 +1,6 @@
 pygame==2.0.0.dev6
 beautifulsoup4==4.9.1
-cltk==0.1.121
+cltk==1.0.15
 future==0.18.2
 numpy==1.18.5
 tensor2tensor==1.15.7
