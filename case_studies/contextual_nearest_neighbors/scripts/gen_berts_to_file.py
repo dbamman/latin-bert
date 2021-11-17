@@ -1,6 +1,6 @@
 import argparse, sys
-from cltk.tokenize.word import WordTokenizer
-from cltk.tokenize.latin.sentence import SentenceTokenizer
+from cltk.tokenizers.lat.lat import LatinWordTokenizer as WordTokenizer
+from cltk.tokenizers.lat.lat import LatinPunktSentenceTokenizer as SentenceTokenizer
 from tensor2tensor.data_generators import text_encoder
 import numpy as np
 import torch
@@ -64,7 +64,7 @@ class LatinTokenizer():
 
 def read_file(filename):
 	sent_tokenizer = SentenceTokenizer()
-	word_tokenizer = WordTokenizer('latin')
+	word_tokenizer = WordTokenizer()
 
 	all_sents=[]
 	with open(filename, encoding="utf-8") as file:
