@@ -137,6 +137,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Mac OS
+.DS_Store
+
 # Project specific
 berts.output.txt
 models/latin_bert/
