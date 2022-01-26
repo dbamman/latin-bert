@@ -6,6 +6,8 @@ David Bamman and Patrick J. Burns (2020), [Latin BERT: A Contextual Language Mod
 
 ### Install
 
+*Tested on Python 3.8.12 and 3.7.12.*
+
 1.) Create a [conda environment](https://www.anaconda.com/download/) (optional):
 
 ```sh
@@ -26,7 +28,7 @@ pip install -r requirements.txt
 4.) Install Latin tokenizer models:
 
 ```sh
-python3 -c "from cltk.corpus.utils.importer import CorpusImporter; corpus_importer = CorpusImporter('latin');corpus_importer.import_corpus('latin_models_cltk')"
+python3 -c "from cltk.data.fetch import FetchCorpus; corpus_downloader = FetchCorpus(language='lat');corpus_downloader.import_corpus('lat_models_cltk')"
 ```
 
 5.) Download pre-trained BERT model for Latin:
