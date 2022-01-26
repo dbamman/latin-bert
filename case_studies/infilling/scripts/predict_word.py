@@ -5,11 +5,9 @@ from transformers import BertModel, BertForMaskedLM, BertPreTrainedModel
 from tensor2tensor.data_generators import text_encoder
 import torch
 import numpy as np
-from cltk.tokenize.word import WordTokenizer
-from cltk.tokenize.latin.sentence import SentenceTokenizer
+from cltk.tokenizers.lat.lat import LatinWordTokenizer as WordTokenizer
 from torch import nn
 import random
-from random import randrange
 
 random.seed(1)
 
@@ -20,7 +18,7 @@ class LatinTokenizer():
 		self.vocab={}
 		self.reverseVocab={}
 		self.encoder=encoder
-		self.word_tokenizer = WordTokenizer('latin')
+		self.word_tokenizer = WordTokenizer()
 
 		self.vocab["[PAD]"]=0
 		self.vocab["[UNK]"]=1
@@ -241,5 +239,3 @@ if __name__ == "__main__":
 	model.to(device)
 
 	proc_file(dataFile, wp_tokenizer, model)
-
-
