@@ -1,8 +1,0 @@
-2020-09-05 23:26:00.347019: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
-
-********************************************
-Running on: cuda
-********************************************
-
-{'mode': 'test', 'bertPath': '../../models/latin_bert', 'tokenizerPath': '../../models/subword_tokenizer_latin/latin.subword.encoder', 'batch_prediction_file': None, 'input_prediction_file': None, 'output_prediction_file': None, 'trainFile': None, 'testFile': 'UD_Latin-ITTB/la_ittb-ud-test.conllu', 'devFile': None, 'tagFile': 'UD_Latin-ITTB/pos.tagset', 'modelFile': 'UD_Latin-ITTB/pos.model', 'metric': 'accuracy', 'max_epochs': None}
-Accuracy: 0.988
