@@ -272,8 +272,12 @@ class BertLatin(nn.Module):
 		input_ids = input_ids.to(device)
 		attention_mask = attention_mask.to(device)
 		transforms = transforms.to(device)
-		sequence_outputs, pooled_outputs = self.bert.forward(input_ids, token_type_ids=None, attention_mask=attention_mask)
-
+		
+		outputs = self.bert.forward(input_ids, token_type_ids=None, attention_mask=attention_mask)
+		# 'outputs' from BERT is a transformers.modeling_outputs.BaseModelOutputWithCrossAttentions object
+		sequence_outputs = outputs["last_hidden_state"]
+		pooled_outputs = outputs["pooler_output"]
+		
 		all_layers=sequence_outputs
 		out=torch.matmul(transforms,all_layers)
 		return out
