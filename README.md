@@ -6,7 +6,7 @@ David Bamman and Patrick J. Burns (2020), [Latin BERT: A Contextual Language Mod
 
 ### Install
 
-*Tested on Python 3.8.12 and 3.7.12.*
+*Tested on Python 3.10.13 \[Feb. 24 2024\].*
 
 1.) Create a [conda environment](https://www.anaconda.com/download/) (optional):
 
@@ -144,3 +144,6 @@ BERT representations are contextual embeddings, so the same word type (e.g., *in
 
 
 The most similar tokens not only capture the specific morphological constraints of this sense of *in* appearing with a noun in the accusative case (denoting *into* rather than *within*) but also broadly capture the more specific subsense of division *into* parts.
+
+### Notes
+With thanks to Todd Cook, Luis Antonio Vasquez Reina, LuigiOnFire for their contributions.
